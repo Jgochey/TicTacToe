@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import NavBar from '../components/NavBar';
+// import NavBar from '../components/NavBar';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/styles/globals.css';
@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <NavBar />
+        {/* <NavBar /> */}
         <div className="container">{children}</div>
       </body>
     </html>

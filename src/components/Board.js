@@ -69,19 +69,19 @@ export default function Board() {
     <><div>Scoreboard</div>
     <h3>Player One: {playerOneScore} -- Player Two: {playerTwoScore}</h3>
     <div className="row1">
-      <Button onClick={() => handleSelect(0)}>{tiles[0]}</Button>
-      <Button onClick={() => handleSelect(1)}>{tiles[1]}</Button>
-      <Button onClick={() => handleSelect(2)}>{tiles[2]}</Button>
+      <Button className='tile' onClick={() => handleSelect(0)}>{tiles[0]}</Button>
+      <Button className='tile' onClick={() => handleSelect(1)}>{tiles[1]}</Button>
+      <Button className='tile' onClick={() => handleSelect(2)}>{tiles[2]}</Button>
     </div>
     <div className="row2">
-      <Button onClick={() => handleSelect(3)}>{tiles[3]}</Button>
-      <Button onClick={() => handleSelect(4)}>{tiles[4]}</Button>
-      <Button onClick={() => handleSelect(5)}>{tiles[5]}</Button>
+      <Button className='tile' onClick={() => handleSelect(3)}>{tiles[3]}</Button>
+      <Button className='tile' onClick={() => handleSelect(4)}>{tiles[4]}</Button>
+      <Button className='tile' onClick={() => handleSelect(5)}>{tiles[5]}</Button>
     </div>
     <div className="row3">
-      <Button onClick={() => handleSelect(6)}>{tiles[6]}</Button>
-      <Button onClick={() => handleSelect(7)}>{tiles[7]}</Button>
-      <Button onClick={() => handleSelect(8)}>{tiles[8]}</Button>
+      <Button className='tile' onClick={() => handleSelect(6)}>{tiles[6]}</Button>
+      <Button className='tile' onClick={() => handleSelect(7)}>{tiles[7]}</Button>
+      <Button className='tile' onClick={() => handleSelect(8)}>{tiles[8]}</Button>
     </div>
 
     <h4>Player {playerOneTurn ? 'One' : 'Two'}&apos;s Turn</h4>
