@@ -1,31 +1,29 @@
-import Link from 'next/link';
+'use client';
 
-function Home() {
+import { useEffect } from 'react';
+import { Navbar } from 'react-bootstrap';
+import Board from '../components/Board';
+
+export default function Home() {
+
+
+
+  useEffect(() => {
+    document.title = 'Home';
+  }, []);
+
+
+
+
+
   return (
     <>
-      <h1>Dis da home page!</h1>
-      <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/events">Events</Link>
-        </li>
-        <li>
-          <Link href="/props">Props</Link>
-        </li>
-        <li>
-          <Link href="/hooks">Hooks</Link>
-        </li>
-        <li>
-          <Link href="/routes">Routes</Link>
-        </li>
-        <li>
-          <Link href="/forms">Forms</Link>
-        </li>
-      </ul>
+    <Navbar />
+    <h1>Welcome to TicTacToe!</h1>
+    <Board />
     </>
+    
+
+
   );
 }
-
-export default Home;
